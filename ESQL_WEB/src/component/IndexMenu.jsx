@@ -11,3 +11,5 @@ const IndexMenu=()=>{
         <button onClick={onClickJoin}>회원가입</button>
     </div>);
 };
+
+export default IndexMenu;
