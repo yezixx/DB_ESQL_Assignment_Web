@@ -1,6 +1,4 @@
-import { Route } from "react-router-dom";
-import Login from "./Login";
-import Join from "./Join";
+import { useNavigate } from "react-router-dom";
 
 const IndexMenu=()=>{
     const nav = useNavigate();
@@ -13,10 +11,6 @@ const IndexMenu=()=>{
     return (<div>
         <button onClick={onClickLogin}>로그인</button>
         <button onClick={onClickJoin}>회원가입</button>
-        <Routes>
-            <Route path="/login" element={<Login/>}/>
-            <Route path="/join" element={<Join/>}/>
-        </Routes>
     </div>);
 };
 
