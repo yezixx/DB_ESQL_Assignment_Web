@@ -2,12 +2,16 @@ import './App.css'
 
 // axios 추가
 import axios from 'axios';
+import IndexMenu from './component/IndexMenu';
+import { Routes } from 'react-router-dom';
 
 function App() {
 
   return (
     <>
-      <IndexMenu/>
+      <Routes>
+        <Route path="/" element={<IndexMenu/>}/>
+      </Routes>
     </>
   )
 }
