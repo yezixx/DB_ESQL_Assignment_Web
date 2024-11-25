@@ -1,4 +1,10 @@
+const { useState } = require("react")
+
 const Join =()=>{
+    const [id, setId]=useState();
+    const [pw, setPw]=useState();
+    const [name,setName]=useState();
+    const [role, setRole]=useState();
     return (
         <div>
             <div>
